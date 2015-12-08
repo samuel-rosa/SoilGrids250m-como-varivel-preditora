@@ -1,7 +1,53 @@
-O \textit{SoilGrids1km} é um conjunto de mapas de diversas propriedades do solo em diversas profundidades, assim como da classificação taxonômica nos dois sistemas taxonômicos internacionais.
+O \textit{SoilGrids250m} é um produto do \href{http://www.isric.org/}{ISRIC} -- 
+World Soil Information composto por mapas de diversas propriedades do solo em 
+diversas profundidades, assim como da classificação taxonômica nos dois sistemas
+taxonômicos internacionais, com resolução espacial de 250 metros. A primeira 
+versão do \textit{SoilGrids250m} deverá estar disponível gratuitamente em 
+janeiro de 2016.
 
-Aproveito para compartilhar uma informação obtida hoje cedo com o colega Tom Hengl do ISRIC: Os mapas do SoilGrids250m ainda não estão disponíveis devido à necessidade da sua atualização, haja vistas que algumas instituições russas acabaram de disponibilizar dados de perfis de solo. Assim, os modelos preditivos serão calibrados novamente, com previsão para os novos mapas para todo o mundo estarem prontos em janeiro próximo. Essa informação é muito importante para pesquisadores como nossa colega Natalia Crespo Mendes, cujo projeto de doutorado envolve o estabelecimento de uma relação da ocorrência de espécies de plantas com o pH do solo em todo o Brasil.
+A equipe do ISRIC reconhece que os mapas do \textit{SoilGrids250m} possuem 
+inúmeras limitações e, sobretudo, que não são os mais apropriados para a tomada 
+de decisão em nível regional/nacional -- o foco do \textit{SoilGrids250m} é o 
+nível continental/global. Daí a importância do trabalho das instituições 
+brasileiras para produzirem mapas das diversas propriedades do solo para o 
+território nacional. Qual seria a utilidade do \textit{SoilGrids250m} nesse 
+caso?
 
-A equipe do ISRIC reconhece que os mapas do SoilGrids250m não são os mais apropriados para o nível de planejamento local. Daí a importância do trabalho das instituições brasileiras. A sugestão da equipe do ISRIC é que os mapas do SoilGrids250m sejam usados pelas instituições brasileiras como variáveis explicativas (covariáveis) em seus modelos de mapeamento do solo. A vantagem disso seria a construção de modelos de mapeamento do solo mais simples, que não requerem o armazenamento de grande quantidade de dados de variáveis explicativas para todo o território nacional. Um exemplo recente desta prática são os mapas produzidos para todo o continente africano, cuja descrição estão no artigo disponível em http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0125814#pone.0125814.e004.
+A sugestão da equipe do ISRIC é que os mapas do \textit{SoilGrids250m} sejam 
+usados como variáveis preditoras (variáveis explicativas, covariáveis) nos 
+modelos de mapeamento do solo desenvolvidos em nível regional/nacional. Usar os 
+mapas do \textit{SoilGrids250m} como variáveis preditoras nos permitiria 
+construir modelos de mapeamento do solo mais simples, que não requerem o 
+armazenamento de grande quantidade de dados de variáveis preditoras (imagens de 
+satélite, atributos de terreno, entre outras) para todo o território nacional, 
+o que representaria um enorme ganho em eficiência operacional. Um exemplo 
+recente dessa prática são os mapas produzidos para todo o continente africano 
+\cite{HenglEtAl2015}.
 
-Eu acredito que seja bastante provável que os mapas do SoilGrids250m expliquem a maior parte da variação espacial dos dados de solo no território brasileiro. Caberia a nós encontrar a melhor estratégia para aumentar a acurácia de nossos mapas. Uma delas seria o uso de variáveis preditoras com resolução espacial mais fina (5-30 metros, por exemplo). Contudo, esta estratégia parece pouco eficiente, como nós mostramos em artigo disponível em http://www.sciencedirect.com/science/article/pii/S001670611400456X. Em geral, a maneira mais eficiente de produzir mapas com acurácia melhor do que aquela do SoilGrids250 é a coleta de mais dados de solo, sobretudo na regiões onde possuímos pequena densidade amostral. Uma maneira eficiente de definir os locais onde novos perfis de solo precisam ser descritos, tanto do ponto de vista pedológico como estatístico e financeiro, é a combinação do conhecimento de nossos experientes pedólogos com técnicas computacionais, como aquela que desenvolvemos durante meu projeto de doutorado e está descrita em http://meetingorganizer.copernicus.org/EGU2015/EGU2015-7780.pdf.
+Eu acredito que os mapas do \textit{SoilGrids250m} devem explicar a maior parte 
+da variação espacial dos dados de solo no território brasileiro. Afinal de 
+contas, os mapas do \textit{SoilGrids250m} são resultado do uso dos dados de 
+cerca de 5.000 perfis de solo no território brasileiro. Assim, podemos supor 
+que o mapa de carbono do \textit{SoilGrids250m} explique ao redor de 50 \% da 
+variação espacial do conteúdo de carbono nos primeiros 5 cm do solo no 
+território brasileiro. Caberia a nós encontrar a melhor estratégia para produzir
+mapas que expliquem mais do que 50 \% da variação espacial -- no caso do carbono
+a meta deveria estar entre 70 e 80 \%.
+
+Uma das estratégias comumente empregadas para produzir mapas mais acurados 
+consiste em usar variáveis preditoras com resolução espacial mais fina (30 m, 
+por exemplo). Contudo, esta estratégia parece pouco eficiente, como nós 
+mostramos em artigo publicado na revista
+ \href{http://www.sciencedirect.com/science/article/pii/S001670611400456X}{Geoderma}.
+O uso de variáveis preditoras com resolução espacial mais fina requer maior 
+capacidade de armazenamento e processamento de dados, e dificilmente se traduz
+em mapas mais acurados se o volume de dados de solo é pequeno. Assim, a maneira
+mais eficiente de produzir mapas com acurácia maior do que aquela do 
+\textit{SoilGrids250m} é a coleta de mais dados de perfis de solo, sobretudo na 
+regiões onde possuímos pequena densidade amostral.
+
+Em muitos casos, tais dados 
+existem mas não estão disponíveis para uso, seja por um ou outro motivo. 
+
+
+ melhor do que  Uma maneira eficiente de definir os locais onde novos perfis de solo precisam ser descritos, tanto do ponto de vista pedológico como estatístico e financeiro, é a combinação do conhecimento de nossos experientes pedólogos com técnicas computacionais, como aquela que desenvolvemos durante meu projeto de doutorado e está descrita em http://meetingorganizer.copernicus.org/EGU2015/EGU2015-7780.pdf.
